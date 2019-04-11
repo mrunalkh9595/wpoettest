@@ -21,6 +21,14 @@
 
 });
 
+if ($(window).width() < 544) {
+   $('.slider-for').removeClass('tab-content');
+}
+else {
+  $('.slider-for ').addClass('tab-content');
+ }
+
+
  $(window).on('load', function() {
   $(".loaderdiv").removeClass("spinner");
 }); 

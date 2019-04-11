@@ -17,9 +17,13 @@ a:hover{
 .secound-colom-inner a{
 	color: #fff;
 }
+.secound-colom-inner a .fa{
+	margin: 0 5px;
+	vertical-align: middle;
+}
 /**/
 section.colom-layout {
-    width: 86.73%;
+    width: 96%;
     margin: auto;
     padding: 66px 0px;
 }	
@@ -106,7 +110,7 @@ position: relative;
 	-ms-opacity: 1;
 	-o-opacity: 1;
 }
-.nav-tabs .nav-item .section-image{
+ .nav-item .section-image{
 	width: 80px;
 	height: 72px;
 	background-image: url(../img/learning.svg);
@@ -116,10 +120,12 @@ position: relative;
 	    display: inline-block;
     vertical-align: middle;
 }
-.nav-tabs .nav-item:nth-child(2) .section-image{
+ .technology .nav-item .section-image,
+ .nav-item:nth-child(2) .section-image{
 	background-image: url(../img/technology.svg);
 }
-.nav-tabs .nav-item:nth-child(3) .section-image{
+.technology .nav-item .section-image,
+.nav-item:nth-child(3) .section-image{
 	background-image: url(../img/communication.svg);
 }
 .sec-title{
@@ -133,6 +139,7 @@ position: relative;
 	margin-bottom: 30px;
 	width: 100%;
 	background-color: #fff;
+	border-radius: 5px;
 }
 .nav-tabs .nav-item:last-child{
 	margin-bottom:0; 
@@ -180,15 +187,15 @@ position: relative;
 	display: block;
 }
 .spinner{
-	
+
 }
 /**/
 .slick-dots li button {
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     padding: 0;
     cursor: pointer;
     color: transparent;
@@ -207,7 +214,7 @@ position: relative;
 }
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -85px;
     display: block;
     width: 100%;
     padding: 0;
@@ -218,7 +225,7 @@ position: relative;
 .slick-dots li {
     position: relative;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 3px;
     padding: 0;
     cursor: pointer;
 }
@@ -226,15 +233,13 @@ position: relative;
     outline: none;
 }
 .slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 6px;
     line-height: 20px;
     position: absolute;
     top: 0;
     left: 0;
     width: 20px;
     height: 20px;
-    content: '•';
+    content: '';
     text-align: center;
     opacity: .25;
     color: black;
@@ -247,5 +252,221 @@ position: relative;
 @media (min-width: 1200px){
 	section.colom-layout{
 		width: 1170px;
+	}
+}
+@media (max-width: 1200px){
+
+		.slick-dots{
+			bottom: -35px;
+		}
+}
+@media (max-width: 620px){
+		.slick-dots{
+			bottom: -25px;
+		}
+}
+@media screen and (max-width: 1200px) and (min-width: 992px){
+		.sec-title{
+			font-size: 14px;
+		}
+		.nav-item .section-image{
+			width: 55px;
+			height: 55px;
+			background-size: 35px;
+		}
+}
+@media screen and (max-width: 991px) and (min-width: 730px){
+	.nav-item .section-image{
+			width: 45px;
+			height: 45px;
+			background-size: 30px;
+		}
+		.sec-title{
+			font-size: 13px;
+		}
+		.nav-tabs .nav-item{
+			margin-bottom: 20px;
+		}
+		.si_desc{
+			font-size: 16px;
+			margin: 10px auto 10px;
+		}
+}
+@media screen and (max-width: 730px) and (min-width: 545px){
+	.nav-item .section-image{
+			width: 30px;
+			height: 30px;
+			background-size: 20px;
+		}
+		.si_title{
+			font-size: 10px;
+		}
+		.sec-title{
+			font-size: 10px;
+		}
+		.nav-tabs{
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+		.nav-tabs .nav-item{
+			margin-bottom: 15px;
+		}
+		.si_desc{
+			font-size: 12px;
+			margin: 10px auto 10px;
+		}
+		.secound-colom-inner a{
+			font-size: 12px;
+		}
+		.slick-dots li{
+			margin: 0 3px;
+		}
+		.slick-dots li button{
+			width: 7px;
+			height: 7px;
+		}
+}
+@media (min-width: 545px){
+
+	.hidden-md-up{
+		display: none;
+	}
+	.collapse{
+		display: inherit;
+	}
+	.slider-for .slide_img{
+		display: none;
+	}
+}
+@media (max-width: 544px){
+	.secound-colom-inner {
+    background-color: rgb(90,180,201,0.9);
+    padding: 55px 0;
+    position: relative;
+	}
+	.nav-item::before{
+position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    bottom: -25px;
+    border-bottom: 10px solid #63b4c9;
+    margin: 0 auto;
+    text-align: center;
+    width: 15px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+	}
+/*.tab-content>.tab-pane {
+    display: inherit;}
+	.collapse.show {
+    display: block;
+}
+*/
+.collapse {
+    display: none;
+}
+
+	.om{
+		display: block;	
+	}
+	.first-colom{
+		display: none;
+	}
+	.secound-colom{
+		display: block;
+		width: 100%;
+		background-color: transparent;
+	}
+	.third-colom,.sl_inner	{
+		width: 100%;
+	}
+	.sl_inner{
+		position: relative;
+		z-index: 9;
+	}
+	.third-colom{
+		display: none;
+		position: absolute;z-index: 0;
+		top: 0;
+		opacity: 0.3;
+	}
+	.slide_img{
+	display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+	}
+	.hidden-md-up{
+		display: none;
+	}
+	.hidden-md-up{
+		display: block;
+	}
+	.colom-layout-inner{
+		display: block;
+	}
+	.nav-tabs{
+		margin:0;
+	}
+	.first-colom{
+		background-color: transparent;
+	}
+	span.float-xs-right {
+        display: flex;
+    justify-content: flex-end;
+    flex: 1;
+	}
+	.nav-item {
+    margin-bottom: 25px;
+    position: relative;
+	}
+	.nav-item:last-child {
+		margin-bottom: 0;
+	}
+	.nav-item .collapse-icons .add,
+	.nav-item .collapse-icons .remove{
+			width: 20px;
+	height: 20px;
+	background-image: url(../img/add.svg);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: center;
+	    display: inline-block;
+    vertical-align: middle;
+	}
+	.nav-item[aria-expanded="true"] .collapse-icons .remove{
+		display: none;
+		background-image: url(../img/remove.svg);
+	}
+	.nav-item[aria-expanded="true"] .collapse-icons .add{
+		display: none;
+	}
+	.nav-item[aria-expanded="false"] .collapse-icons .remove{
+		display: none;
+	}
+	.nav-item[aria-expanded="true"] .collapse-icons .remove{
+		display: block;
+	}
+	.nav-item[aria-expanded="true"]::before{
+		opacity: 1;
+	} 
+	.slick-dots{
+		display: none;
+	}
+	.nav-link {
+    padding:0;
+    background-color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+	}
+	.tab-pane {
+		position: relative;
+		overflow: hidden;
+		margin: 20px 0 15px;
 	}
 }

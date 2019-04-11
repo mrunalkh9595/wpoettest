@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
 </head>
@@ -27,6 +28,7 @@
 								<div class="section-image"></div>
 								<div class="sec-title">learning</div>
 							</a>
+
 						</li>
 						<li class="nav-item ">
 							<a class="navtabtwo technology nav-link" data-toggle="tab" href="#technology" role="tab" aria-controls="technology">
@@ -44,58 +46,103 @@
 				</div>
 				<div class="secound-colom  ">
 					
-						<!--  -->
-						<div class="sl_inner om">
-							<div class="slider-for tab-content">
-								<div class="tab-pane learning active" id="learning" >
-									<div class="secound-colom-inner">
-										<div class="si_title">digital learning infrastructure</div>
-										<div class="si_desc">usabilty enhancement and training for transaction portal for customers</div>
-										<a href="#" class="read more">learn more</a>
-									</div>
+					<!--  -->
+					<div class="sl_inner om">
+						<div class="slider-for tab-content">
+							<div class="nav-item title clearfix hidden-md-up" data-target="#learning" data-toggle="collapse"  aria-expanded="true">
+								<a class="navtabtwo technology nav-link" data-toggle="tab" href="#technology" role="tab" aria-controls="technology">
+									<div class="section-image"></div>
+									<div class="sec-title">learning</div>
+									<span class="float-xs-right">
+										<span class="navbar-toggler collapse-icons">
+											<span class="material-icons add"></span>
+											<sapn class="material-icons remove"></sapn>
+										</span>
+									</a>
+								
 								</div>
-								<div class="tab-pane technology" id="technology">
-									<div class="secound-colom-inner">
-										<div class="si_title">2digital learning infrastructure</div>
-										<div class="si_desc">usabilty enhancement and training transaction portal for customers</div>
-										<a href="#" class="read more">learn more</a>
+									<div class="tab-pane tabremove collapse learning show active" id="learning" >
+										<div class="secound-colom-inner">
+											<div class="si_title">digital learning infrastructure</div>
+											<div class="si_desc">usabilty enhancement and training for transaction portal for customers</div>
+											<a href="#" class="read more">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div>
+										<div id="tabone" class="hidden-md-up learning slide_img active"><img src="assets/img/DL-Technology.jpg" alt="sliderimg"></div>
 									</div>
+
+								<div class="nav-item title clearfix hidden-md-up" data-target="#technology" data-toggle="collapse"  aria-expanded="false">
+									<a class="navtabtwo technology nav-link" data-toggle="tab" href="#technology" role="tab" aria-controls="technology">
+										<div class="section-image"></div>
+										<div class="sec-title">technology</div>
+										<span class="float-xs-right">
+											<span class="navbar-toggler collapse-icons">
+												<span class="material-icons add"></span>
+												<sapn class="material-icons remove"></sapn>
+											</span>
+										</a>
+										
+
+									</div>
+									<div class="tab-pane tabremove collapse technology" id="technology">
+											<div class="secound-colom-inner">
+												<div class="si_title">2digital learning infrastructure</div>
+												<div class="si_desc">usabilty enhancement and training transaction portal for customers</div>
+												<a href="#" class="read more">learn more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+											</div>
+											<div id="tabtwo" class="hidden-md-up technology slide_img active"><img src="assets/img/DL-Learning-1.jpg" alt="sliderimg"></div>
+										</div>
+
+									<div class="nav-item title clearfix hidden-md-up" data-target="#communication" data-toggle="collapse"  aria-expanded="false">
+										<a class="navtabthree communication nav-link" data-toggle="tab" href="#communication" role="tab" aria-controls="communication">
+											<div class="section-image"></div>
+											<div class="sec-title">communication</div>
+											<span class="float-xs-right">
+												<span class="navbar-toggler collapse-icons">
+													<span class="material-icons add"></span>
+													<sapn class="material-icons remove"></sapn>
+												</span>
+											</span>
+										</a>
+									
+
+									</div>
+										<div class="tab-pane tabremove collapse communication" id="communication">
+											<div class="secound-colom-inner">
+												<div class="si_title">3digital learning infrastructure</div>
+												<div class="si_desc">usabilty enhancement and training transaction portal for customers</div>
+												<a href="#" class="read more">learn more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+											</div>
+											<div id="tabthree" class="hidden-md-up communication slide_img active"><img src="assets/img/DL-Communication.jpg" alt="sliderimg"></div>
+										</div>
+
 								</div>
-								<div class="tab-pane communication" id="communication">
-									<div class="secound-colom-inner">
-										<div class="si_title">3digital learning infrastructure</div>
-										<div class="si_desc">usabilty enhancement and training transaction portal for customers</div>
-										<a href="#" class="read more">learn more</a>
-									</div>
+								<ul class="slick-dots">
+									<li class="learning active"><button></button></li>
+									<li class="technology"><button></button></li>
+									<li class="communication"><button></button></li>
+								</ul>
+							</div>
+							<!--  -->
+							<div class="third-colom om">
+								<div class="slider-nav">
+									<div id="tabone" class="learning slide_img active"><img src="assets/img/DL-Technology.jpg" alt="sliderimg"></div>
+									<div id="tabtwo" class="technology slide_img"><img src="assets/img/DL-Learning-1.jpg" alt="sliderimg"></div>
+									<div id="tabthree" class=" communication slide_img"><img src="assets/img/DL-Communication.jpg" alt="sliderimg"></div>
 								</div>
 							</div>
-							<ul class="slick-dots">
-								<li class="learning active"><button></button></li>
-								<li class="technology"><button></button></li>
-								<li class="communication"><button></button></li>
-							</ul>
-						</div>
-						<!--  -->
-						<div class="third-colom om">
-							<div class="slider-nav">
-								<div id="tabone" class="learning slide_img active"><img src="assets/img/DL-Technology.jpg" alt="sliderimg"></div>
-								<div id="tabtwo" class="technology slide_img"><img src="assets/img/DL-Learning-1.jpg" alt="sliderimg"></div>
-								<div id="tabthree" class=" communication slide_img"><img src="assets/img/DL-Communication.jpg" alt="sliderimg"></div>
-							</div>
+
+							<!--  -->
+
 						</div>
 
-						<!--  -->
-							
-				</div>
-				
-			</div>
-		</section>
-	</main>
+					</div>
+				</section>
+			</main>
 
-	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/slick.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
+			<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript" src="assets/js/slick.js"></script>
+			<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="assets/js/custom.js"></script>
 
-</body>
-</html>
+		</body>
+		</html>
