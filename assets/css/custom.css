@@ -85,7 +85,8 @@ position: relative;
 	position: relative;
 	border-radius: 3px;
 }
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover{
     box-shadow: 0 2px 5px 0px rgb(0,0,0,0.2);
 }
 .nav-tabs .nav-link:before {
